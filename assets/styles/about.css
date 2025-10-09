@@ -132,3 +132,44 @@ padding-right: 1.5rem ;
     margin-top: 12px;
     font-size: 20px;
 }
+.footer {
+  background-color: #56ff56;
+  border-top: 5px solid #000000;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem 1rem;
+  margin-top: 185px;
+  font-family: Poppins, sans-serif;
+  position: relative;
+  z-index: 10;
+  font-size: 15px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+}
+
+.socials a {
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
