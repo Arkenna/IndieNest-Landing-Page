@@ -1,5 +1,59 @@
 {
   "footer": {
-    "rights": "All rights reserved.",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "description": "The hub for independent developers to make themselves known and upload their projects."
+  },
+  "option": {
+    "home": "Home",
+    "about": "About us",
+    "goals": "Goals",
+    "reviews": "Reviews"
+  },
+  "about": {
+    "inge": "Software Engineer",
+    "description": "We are a group of university developers looking to help other small development teams.",
+    "aquino": "Responsible and punctual.",
+    "giuliano": "Supportive and focused.",
+    "johnny": "Responsible and cooperative.",
+    "carlos": "Proactive.",
+    "knowledge": {
+      "aquino": "Knowledge of C++ and Java.",
+      "giuliano": "Knowledge of C++, Python, and Lua.",
+      "johnny": "Knowledge of C++, HTML, CSS, and JavaScript.",
+      "carlos": "Knowledge of C++ and C#."
+    }
+  },
+  "goals": {
+    "title": "Goals",
+    "description": "Our goals in IndieNest are",
+    "goal1": "Giving visibility to small developers.",
+    "goal2": "Allow users to share their projects and work in which they participated.",
+    "goal3": "Helping small developers get involved in new projects."
+  },
+  "reviews": {
+    "title": "What our users say",
+    "description": "Hear directly from developers and gamers who are part of the IndieNest community.",
+    "review1": {
+      "quote": "IndieNest finally gave my small project the visibility it needed. Connecting with other devs here has been invaluable!",
+      "author": "Alex Chen",
+      "source": "Solo Developer, 'Pixel Odyssey'"
+    },
+    "review2": {
+      "quote": "As a gamer, finding unique indie titles is tough. IndieNest makes discovering hidden gems easy and fun.",
+      "author": "Maria Garcia",
+      "source": "Indie Game Enthusiast"
+    },
+    "review3": {
+      "quote": "The feedback and collaboration tools are fantastic. Found my composer and lead artist for my current game right here.",
+      "author": "Sam 'Driftwood' Kay",
+      "source": "Project Lead, 'Echoes of the Void'"
+    },
+    "review4": {
+      "quote": "A much-needed platform that genuinely supports the indie spirit. Uploading and managing my game builds is straightforward.",
+      "author": "Priya Singh",
+      "source": "Co-founder, Sparrow Games"
+    }
   }
 }

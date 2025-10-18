@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <a routerLink="/home" class="logo-link">
+      <img class="logo" alt="Logo-Indie" src="assets/logos/IndieLogo.png">
+    </a>
+
+    <div class="mat-spacer"></div>
+    @for (option of options; track option.label) {
+      <a mat-button [routerLink]="option.link" routerLinkActive="active">{{ option.label | translate }}</a>
+    }
+    <app-language-switcher/>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<main class="main-content">
+  <router-outlet/>
+</main>
+
+<app-footer-content/>

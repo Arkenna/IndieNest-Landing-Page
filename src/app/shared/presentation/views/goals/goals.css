@@ -1,0 +1,83 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  position: relative;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+}
+:host::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(96, 255, 157, 0.527), rgba(10, 10, 10, 0.6)), url("/assets/background/AboutBack.jpg"); /* Reemplaza si quieres otro fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.45);
+  background-blend-mode: multiply;
+  z-index: -1;
+}
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+.description {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 4rem;
+  max-width: 700px;
+  line-height: 1.6;
+}
+.goals {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.goal-item {
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+.goal-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+.goal-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.goal-text {
+  padding: 1.5rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  flex-grow: 1;
+  text-align: center;
+}
