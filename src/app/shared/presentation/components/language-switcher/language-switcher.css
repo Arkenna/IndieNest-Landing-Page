@@ -1,0 +1,9 @@
+
+:host  .mat-button-toggle-checked {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+:host  .mat-button-toggle {
+  color: rgba(255, 255, 255, 0.87);
+}
