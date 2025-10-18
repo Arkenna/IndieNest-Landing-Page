@@ -1,5 +1,57 @@
 {
   "footer": {
-    "rights": "Todos los derechos reservados.",
+    "rights": "Todos los derechos reservados."
+  },
+  "home": {
+    "description": "El nido para que los desarrolladores independientes se den a conocer y suban sus proyectos."
+  },
+  "option": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "goals": "Objetivos",
+    "reviews": "Reseñas"
+  },
+  "about": {
+    "inge": "Ingeniero de Software.",
+    "description": "Somos un grupo de desarrolladores universitarios que queremos ayudar a otros equipos de desarrollo pequeños.",
+    "aquino": "Responsable y puntual.",
+    "giuliano": "Solidario y enfocado.",
+    "johnny": "Responsable y cooperativo.",
+    "carlos": "Proactivo.",
+    "carknown": "Conocimientos en C++ y C#.",
+    "johknown": "Conocimientos en C++, HTML, CSS y JavaScript.",
+    "giuknown": "Conocimientos en C++, Python y Lua.",
+    "aquiknown": "Conocimientos en C++ y Java."
+  },
+  "goals": {
+    "title": "Objetivos",
+    "description": "Nuestros objetivos en IndieNest son",
+    "goal1": "Dar visibilidad a los pequeños desarrolladores.",
+    "goal2": "Permitir a los usuarios compartir sus proyectos y trabajos en los que participaron.",
+    "goal3": "Ayudar a los pequeños desarrolladores a involucrarse en nuevos proyectos."
+  },
+  "reviews": {
+    "title": "Lo que dicen nuestros usuarios",
+    "description": "Escucha directamente a desarrolladores y jugadores que forman parte de la comunidad IndieNest.",
+    "review1": {
+      "quote": "IndieNest finalmente le dio a mi pequeño proyecto la visibilidad que necesitaba. ¡Conectar con otros desarrolladores aquí ha sido invaluable!",
+      "author": "Alex Chen",
+      "source": "Desarrollador Solitario, 'Pixel Odyssey'"
+    },
+    "review2": {
+      "quote": "Como jugador, encontrar títulos indie únicos es difícil. IndieNest hace que descubrir joyas ocultas sea fácil y divertido.",
+      "author": "María García",
+      "source": "Entusiasta de Juegos Indie"
+    },
+    "review3": {
+      "quote": "Las herramientas de feedback y colaboración son fantásticas. Encontré a mi compositor y artista principal para mi juego actual aquí mismo.",
+      "author": "Sam 'Driftwood' Kay",
+      "source": "Líder de Proyecto, 'Echoes of the Void'"
+    },
+    "review4": {
+      "quote": "Una plataforma muy necesaria que apoya genuinamente el espíritu indie. Subir y gestionar las builds de mi juego es sencillo.",
+      "author": "Priya Singh",
+      "source": "Cofundadora, Sparrow Games"
+    }
   }
 }

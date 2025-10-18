@@ -1,0 +1,50 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar-row{
+  background: linear-gradient(
+    to bottom,
+    #56ff56 92%,
+    rgba(86, 255, 86, 0) 100%
+  );
+  color: white;
+  padding: 3.5rem 0;
+  position: fixed;
+  left: 0;
+  top:0;
+  right: 0;
+  z-index: 999;
+}
+.mat-toolbar-row:hover{}
+.mat-toolbar{
+
+}
+.logo {
+  margin-left: 2rem;
+  width: 5rem;
+  transition: 0.25s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo-link {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+
