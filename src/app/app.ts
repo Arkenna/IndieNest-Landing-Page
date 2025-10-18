@@ -1,10 +1,12 @@
 import {Component, inject, signal} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-import {FooterContent} from './shared/presentation/components/footer-content/footer-content';
+import {Layout} from './shared/presentation/components/layout/layout';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [
+    Layout
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
