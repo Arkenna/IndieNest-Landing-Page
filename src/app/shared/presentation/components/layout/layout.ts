@@ -5,7 +5,6 @@ import {MatButton} from '@angular/material/button';
 import {TranslatePipe} from '@ngx-translate/core';
 import {LanguageSwitcher} from '../language-switcher/language-switcher';
 import {FooterContent} from '../footer-content/footer-content';
-import {Home} from '../../views/home/home';
 
 @Component({
   selector: 'app-layout',
@@ -19,7 +18,7 @@ import {Home} from '../../views/home/home';
     TranslatePipe,
     LanguageSwitcher,
     FooterContent,
-    Home
+
   ],
   templateUrl: './layout.html',
   styleUrl: './layout.css'
