@@ -87,3 +87,27 @@
     transform: translateY(0);
   }
 }
+.cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 1.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'poppins regular', sans-serif;
+  color: #000000;
+  background-color: #56ff56;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #7aff7a;
+}

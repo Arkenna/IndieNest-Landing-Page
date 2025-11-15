@@ -3,7 +3,8 @@
     "rights": "Todos los derechos reservados."
   },
   "home": {
-    "description": "El nido para que los desarrolladores independientes se den a conocer y suban sus proyectos."
+    "description": "El nido para que los desarrolladores independientes se den a conocer y suban sus proyectos.",
+    "ctaButton": "Ir a la App"
   },
   "option": {
     "home": "Inicio",

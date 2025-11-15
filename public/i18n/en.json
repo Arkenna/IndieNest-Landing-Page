@@ -3,7 +3,8 @@
     "rights": "All rights reserved."
   },
   "home": {
-    "description": "The hub for independent developers to make themselves known and upload their projects."
+    "description": "The hub for independent developers to make themselves known and upload their projects.",
+    "ctaButton": "Go to the App"
   },
   "option": {
     "home": "Home",
