@@ -1,0 +1,69 @@
+# Workflow para compilar y desplegar un proyecto de Angular en GitHub Pages
+name: Deploy Angular to GitHub Pages
+
+on:
+  # Se activa en cada push a la rama 'main' (puedes cambiarlo a 'master' si usas esa)
+  push:
+    branches:
+      - main
+  
+  # Permite ejecutar este workflow manualmente desde la pestaña Actions en GitHub
+  workflow_dispatch:
+
+# Permisos necesarios para que la Action pueda escribir en la rama 'gh-pages'
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Permite solo un despliegue concurrente, cancelando los anteriores
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. Checkout
+        uses: actions/checkout@v4
+
+      - name: 2. Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Puedes ajustar la versión de Node si es necesario
+          cache: 'npm'
+
+      - name: 3. Install Dependencies
+        run: npm ci # 'ci' es más rápido y seguro para CI/CD que 'install'
+
+      - name: 4. Build Project
+        run: npx ng build --base-href /${{ github.event.repository.name }}/
+        # NOTA: --base-href es CRÍTICO para que GitHub Pages encuentre tus archivos.
+        # Usa el nombre de tu repositorio.
+
+      - name: 5. Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: 6. Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Esta es la ruta que se subirá.
+          # La obtuve de tu angular.json (proyecto "LandingIndieNest")
+          # y tu README (directorio "dist/")
+          path: 'dist/LandingIndieNest'
+
+  deploy:
+    # Este job depende de que el 'build' termine exitosamente
+    needs: build
+    
+    # Configuración del entorno de despliegue
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
