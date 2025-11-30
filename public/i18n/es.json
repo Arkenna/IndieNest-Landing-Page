@@ -4,7 +4,9 @@
   },
   "home": {
     "description": "El nido para que los desarrolladores independientes se den a conocer y suban sus proyectos.",
-    "ctaButton": "Ir a la App"
+    "ctaButton": "Ir a la App",
+    "videoProduct": "Sobre el Producto",
+    "videoTeam": "Sobre el Equipo"
   },
   "option": {
     "home": "Inicio",

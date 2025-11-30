@@ -1,14 +1,43 @@
-<div class="title">
-  <h1>
-    <span class="Indie">Indie</span>
-    <span class="Nest">Nest</span>
-  </h1>
+<div class="hero-section">
+  <div class="title">
+    <h1>
+      <span class="Indie">Indie</span>
+      <span class="Nest">Nest</span>
+    </h1>
+  </div>
+  <p class="desc">{{'home.description' | translate }}</p>
+  <a href="https://indienest-web-application.vercel.app"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="cta-button">
+    {{ 'home.ctaButton' | translate }}
+  </a>
+</div>
+
+<div class="videos-section">
+
+  <div class="video-container">
+    <h2 class="video-title">{{ 'home.videoProduct' | translate }}</h2>
+    <div class="iframe-wrapper">
+      <iframe [src]="videoProductUrl"
+              title="About the Product"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <div class="video-container">
+    <h2 class="video-title">{{ 'home.videoTeam' | translate }}</h2>
+    <div class="iframe-wrapper">
+      <iframe [src]="videoTeamUrl"
+              title="About the Team"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+      </iframe>
+    </div>
+  </div>
 
 </div>
-<p class="desc">{{'home.description' | translate }}</p>
-<a href="https://indienest-web-application.vercel.app"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="cta-button">
-  {{ 'home.ctaButton' | translate }}
-</a>
